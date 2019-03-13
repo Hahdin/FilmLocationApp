@@ -1,6 +1,5 @@
 export const getGeoJSON = (data) => {
   let films = [...data.data.getAllFilms]
-  console.log('get json', films.length)
   return new Promise((resolve, reject) => {
     let prs = []
     let done = []
@@ -88,7 +87,6 @@ export const createGeoJSONfile = (data, filmData) => {
     })
   })
   newGJObject.metadata.count = newGJObject.features.length
-  console.log(newGJObject)
   return newGJObject
 }
 //get geojson

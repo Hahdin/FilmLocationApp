@@ -18,22 +18,17 @@ import { FilmSection } from './FilmSection'
 const SanFranPage = ({ ...props }) => {
   const [thisMap, setMap] = useState(null)
   const [filmInfo, setFilmInfo] = useState('')
-  //let __map = null
   const [geoJson, setGeoJson] = useState(null)
   const a_SetMap = async (geo) => {
     try {
       let map = await getMapObject().catch(reason => {
         console.log(reason)
       })
-      //map.rawData = geo
-
       map.myMap = map.getMapObject()
       setMap(map)
       setGeoJson(geo)
-      //__map = map
     } catch (e) { Promise.reject(e) }
   }
-
   useEffect(() => {
     getFilmsFromServer(`{
       getAllFilms{
@@ -51,7 +46,6 @@ const SanFranPage = ({ ...props }) => {
       }
     }`).then(result => {
       props.fetchFilms(result)
-
       //Do this to use existing geoJson
       getGeoJsonFile().then(result => {
         a_SetMap(result).catch(reason => {
