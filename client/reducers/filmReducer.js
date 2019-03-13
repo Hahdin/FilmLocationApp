@@ -1,7 +1,6 @@
 const initialState = {
   films: []
 }
-
 export const filmReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'GET_FILMS': {

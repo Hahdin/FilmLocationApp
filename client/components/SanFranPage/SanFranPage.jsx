@@ -7,20 +7,22 @@ import {
   Tab,
 } from "react-bootstrap";
 import { map as _map } from '../../objects/SanFranMap'
-import React, {useState, useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { getFilms, loadFilms} from '../../actions'
+import { getFilms, loadFilms } from '../../actions'
 import { apolloGet, sendToFile } from '../apicalls'
-import {getGeoJSON, createGeoJSONfile, getGeoJsonFile } from '../getGeo'
-import {FilmSection} from './FilmSection'
+import { getGeoJSON, createGeoJSONfile, getGeoJsonFile } from '../getGeo'
+import { FilmSection } from './FilmSection'
 
-const SanFranPage = ({...props}) => {
+const SanFranPage = ({ ...props }) => {
   const [thisMap, setMap] = useState(null)
+  const [filmInfo, setFilmInfo] = useState('')
   //let __map = null
   const [geoJson, setGeoJson] = useState(null)
-  const a_SetMap = async (geo) =>{
-    try{let map = await getMapObject().catch(reason =>{
+  const a_SetMap = async (geo) => {
+    try {
+      let map = await getMapObject().catch(reason => {
         console.log(reason)
       })
       //map.rawData = geo
@@ -29,9 +31,9 @@ const SanFranPage = ({...props}) => {
       setMap(map)
       setGeoJson(geo)
       //__map = map
-    }catch(e){ Promise.reject(e)}
+    } catch (e) { Promise.reject(e) }
   }
-  
+
   useEffect(() => {
     getFilmsFromServer(`{
       getAllFilms{
@@ -51,32 +53,27 @@ const SanFranPage = ({...props}) => {
       props.fetchFilms(result)
 
       //Do this to use existing geoJson
-      getGeoJsonFile().then(result =>{
-        a_SetMap(result).catch(reason =>{
+      getGeoJsonFile().then(result => {
+        a_SetMap(result).catch(reason => {
           console.log(reason)
         })
         console.log(result)
-      }).catch(reason =>{
+      }).catch(reason => {
         console.log(reason)
       })
-
-     //Do this to create geoJSON
+      //Do this to create geoJSON
       // getGeoJSON(result).then(promise =>{
       //   let gj = createGeoJSONfile(promise, result)
-      //   //sendToFile(gj)
+      //   sendToFile(gj)
       // }).catch(reason =>{
       //   console.log(reason)
       // })
-
-
-
-    }).catch(reason =>{
+    }).catch(reason => {
       console.log(reason)
     })
     return () => {
     }
   }, [])
-  //get the map
   const getMapObject = async () => {
     try {
       return await _map.create()
@@ -84,7 +81,7 @@ const SanFranPage = ({...props}) => {
     catch (e) { Promise.reject(e) }
   }
   console.log(props.films)
-  if (props.films.length === 0){
+  if (props.films.length === 0) {
     return (<div></div>)
   }
   return (<div>
@@ -99,26 +96,27 @@ const SanFranPage = ({...props}) => {
                   heading={'Films'}
                   myMap={thisMap}
                   geo={geoJson}
+                  setFilmInfo={setFilmInfo}
+                  filmInfo={filmInfo}
                 />
               </Tab>
             </Tabs>
           </div>
         </Col>
-        <Col xs={8} md={8}>
-          <div id="map" style={{ backgroundColor: 'white' }}></div>
+        <Col xs={8} md={8} style={{ position: 'sticky', top: '100px' }}>
+          <div style={{ position: 'relative', top: '-30px', color: 'white', background: 'black' }}>{filmInfo}</div>
+          <div className="map" id="map"></div>
         </Col>
       </Row>
     </Grid>
-
-
-    </div>);
+  </div>);
 }
 
 SanFranPage.propTypes = {
   fetchFilms: PropTypes.func.isRequired
 }
 
-const getFilmsFromServer = async (query) =>{
+const getFilmsFromServer = async (query) => {
   let result = {}
   try {
     let apFetch = await apolloGet(query).catch(reason => {
@@ -138,11 +136,11 @@ const getFilmsFromServer = async (query) =>{
 const mapStateToProps = (state, ownProps) => {
   console.log('in state')
   return ({
-     films: state.filmReducer.films 
+    films: state.filmReducer.films
   })
 }
 const mapDispatchToProps = (dispatch, ownProps) => ({
-  fetchFilms: (filmData) =>{
+  fetchFilms: (filmData) => {
     dispatch(loadFilms(filmData))
   }
 })

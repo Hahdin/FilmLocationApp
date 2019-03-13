@@ -6,7 +6,7 @@ import {
   ListGroupItem,
 } from "react-bootstrap";
 const FilmSection = ({ ...props }) => {
-  let { section, heading, myMap, onClickItem, geo } = props
+  let { section, heading, myMap, onClickItem, geo, filmInfo } = props
   let added = []
   return (
     <div >
@@ -15,10 +15,12 @@ const FilmSection = ({ ...props }) => {
           Object.values(section).map(value => {
             let skip = false
             let title = value.Title
+            let date = value.ReleaseYear
+            let star = value.Actor1
             title.trim()
-            if (added.includes(title)){
+            if (added.includes(title)) {
               skip = true
-            } else{
+            } else {
               added.push(title)
               skip = false
             }
@@ -27,8 +29,8 @@ const FilmSection = ({ ...props }) => {
                 {
                   (!skip) ?
                     <ListGroupItem onClick={(e) => onClickItem(e)} val={value.Locations} section={heading}>
-                      {`${title}`}
-                    </ListGroupItem> 
+                      {`${title}: year (${date}), starring ${star}`}
+                    </ListGroupItem>
                     : null
                 }
               </div>
@@ -49,26 +51,62 @@ const mapStateToProps = (state, ownProps) => {
     section: ownProps.section || {},
     heading: ownProps.heading,
     myMap: ownProps.myMap,
-    geo: ownProps.geo
+    geo: ownProps.geo,
+    setFilmInfo: ownProps.setFilmInfo,
+    filmInfo: ownProps.filmInfo
   })
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
   onClickItem: (e) => {
     let values = Object.values(e.target.attributes)
-    console.log('clicked', values[0].ownerElement.innerHTML)
-    ownProps.myMap.addFeature(null)
-    // let ret = false
-    // values.forEach(v => {
-    //   if (v.name === 'section' && v.nodeValue !== 'Curve Information')
-    //     ret = true
-    // })
-    // if (ret)
-    //   return
-    // let val = Object.values(e.target.attributes).filter(a => a.name === 'val')
-    // if (val.length === 0)
-    //   return
-    // dispatch(chartCurve(val[0].nodeValue))
+    console.log('clicked', values[0].ownerElement.innerHTML, values[0].nodeValue)
+    //we need to find out if this Movie Title has a coresponding coordinate in the geo
+    let newGeo = {
+      type: "FeatureCollection",
+      metadata: {
+        generated: Date.now(),
+        url: "localhost",
+        title: "Film Locations in San Francisco",
+        status: 200,
+        api: "1.0.0",
+        count: 0
+      },
+      features: []
+    }
+    let added = false
+    ownProps.geo.features.forEach(feature => {
+      let place = feature.properties.place
+      let i = place.indexOf(',')
+      if (i >= 0) {
+        place = place.slice(0, i)
+      }
+      let val = values[0].nodeValue.toLowerCase()
+      val.trim()
+      place.trim()
+      place = place.toLowerCase()
+      let foundIndex = val.search(place)
+      if (foundIndex >= 0) {
+        added = true
+        let newFeature = {
+          geometry: {
+            coordinates: [...feature.geometry.coordinates],
+            type: "Point"
+          },
+          properties: {
+            place: feature.properties.place
+          },
+          type: "Feature"
+        }
+        newGeo.features.push(newFeature)
+      }
+    })
+    if (added) {
+      ownProps.setFilmInfo(`Found Coordinates Found for Address ${values[0].nodeValue}!!!!`)
+      ownProps.myMap.addFeature(newGeo)
+    } else {
+      ownProps.setFilmInfo(`No Coordinates Found for Address ${values[0].nodeValue}`)
+    }
   }
 })
 const connected = connect(

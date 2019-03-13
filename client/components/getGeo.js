@@ -7,19 +7,16 @@ export const getGeoJSON = (data) => {
     let total = 0
     let dups = 0
     films.forEach((film, i) => {
-      //if ( i > 500 ) return //for testing
+      if (i > 50) return //for testing
       total++
-      if (film.Locations && film.Locations.length){
-        if (done.includes(film.Locations)){
-          dups ++
-          console.log(`duplicate ${film.Locations}`)
+      if (film.Locations && film.Locations.length) {
+        if (done.includes(film.Locations)) {
+          dups++
           return
         }
-
         prs.push(getLonLat(film.Locations))
       }
     })
-    console.log(`total films: ${total}, duplicates: ${dups}`)
     Promise.all(prs).then(results => {
       return resolve(results)
     }).catch(reason => {
@@ -28,37 +25,34 @@ export const getGeoJSON = (data) => {
     })
   })
 }
-const getLonLat = async (address) =>{
+const getLonLat = async (address) => {
   let patt = new RegExp('[(](.*)[)]')
   let newAddy = patt.exec(address)
-  if (newAddy && newAddy[1]){
-      address = newAddy[1]
+  if (newAddy && newAddy[1]) {
+    address = newAddy[1]
   }
+  address = address.replace('"', '')
   address += ', San Francisco'
-  let result = await window.fetch(`http://open.mapquestapi.com/geocoding/v1/address?key=BtpGQO5nYtGhHBWDeH5LnzA6eml8lA5G&location=${address}`)
-  .catch(reason => {
-    console.log(reason)
-    return reason
-  })
+  let result = await window.fetch(`http://open.mapquestapi.com/geocoding/v1/address?key=KEYG&location=${address}`)
+    .catch(reason => {
+      console.log(reason)
+      return reason
+    })
   let jsResult = await result.json().catch(reason => {
-    console.log('json',reason)
+    console.log('json', reason)
     return reason
   })
-  if (jsResult.errors){
+  if (jsResult.errors) {
     console.log('errors getting', jsResult.errors)
     return jsResult.errors
   }
   return jsResult
 }
 
-export const createGeoJSONfile = (data, filmData) =>{
-  let films = [...filmData.data.getAllFilms]
-  //arry of object, 
-  //results is an arry
-  //let newData =[]
+export const createGeoJSONfile = (data, filmData) => {
   let newGJObject = {
     type: "FeatureCollection",
-    metadata:{
+    metadata: {
       generated: Date.now(),
       url: "localhost",
       title: "Film Locations in San Francisco",
@@ -68,35 +62,27 @@ export const createGeoJSONfile = (data, filmData) =>{
     },
     features: []
   }
-  data.forEach(section =>{
-    section.results.forEach(loc =>{
+  data.forEach(section => {
+    section.results.forEach(loc => {
       let found = false
-      loc.locations.forEach(area =>{
+      loc.locations.forEach(area => {
         if (found) return
-        if (area.adminArea5 === 'San Francisco'){//take first one that matches
+        if (area.adminArea5 === 'San Francisco') {//take first one that matches
           found = true
           newGJObject.features.push({
             type: "Feature",
-            
-            properties:{
+            properties: {
               place: loc.providedLocation.location,
             },
-            geometry:{
+            geometry: {
               type: "Point",
-              coordinates:[
+              coordinates: [
                 area.latLng.lng,
                 area.latLng.lat,
                 0
               ]
             }
           })
-          // newData.push({
-          //   orgLocation: loc.providedLocation,
-          //   geo:{
-          //     lon: area.latLng.lng,
-          //     lat: area.latLng.lat
-          //   }
-          // })
         }
       })
     })
@@ -106,14 +92,13 @@ export const createGeoJSONfile = (data, filmData) =>{
   return newGJObject
 }
 //get geojson
-export const getGeoJsonFile = async () =>{ 
-
+export const getGeoJsonFile = async () => {
   return new Promise((resolve, reject) => {
     window.fetch(`http://localhost:65432/geo`)
       .then(pr => {
         pr.json()
           .then(js => {
-            if (js.errors){
+            if (js.errors) {
               return reject(js.errors)
             }
             return resolve(js)
@@ -126,21 +111,4 @@ export const getGeoJsonFile = async () =>{
         return reject(reason)
       })
   })
-
-
-  // let result = await window.fetch(`http://localhost:65432/geo`)
-  // .catch(reason => {
-  //   console.log(reason)
-  //   return reason
-  // })
-  // let jsResult = await result.json().catch(reason => {
-  //   console.log('json',reason)
-  //   return reason
-  // })
-  // if (jsResult.errors){
-  //   console.log('errors getting', jsResult.errors)
-  //   return jsResult.errors
-  // }
-  // return jsResult
- 
 }
