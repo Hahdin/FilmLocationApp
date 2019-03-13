@@ -8,6 +8,10 @@ To start the client, navigate to the client folder and run:
 npm i
 npm start
 ```
+> Once installed you can  double click the ```client.bat``` file.
+
+>> Once both client and server are installed, you can double click the start.bat to start both up
+
 Once running, visit http://localhost:23456 in your browser
 
 # The App

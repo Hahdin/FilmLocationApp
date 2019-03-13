@@ -9,6 +9,9 @@ From the server folder, run the commands:
 npm i
 node index.js 
 ```
+> Once installed you can double click on the provided ```api.bat``` file.
+>> Once both client and server are installed, you can double click the start.bat to start both up
+
 This will run the server locally on port 65432
 
 ## Open in Chrome
