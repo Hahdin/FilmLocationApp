@@ -43,13 +43,6 @@ export const map = {
     this.styleCache = []
     this.myMap = this.getMapObject(center)
   },
-  async loadGeoJson() {
-    getGeoJsonFile().then(result => {
-      console.log(result)
-    }).catch(reason => {
-      console.log(reason)
-    })
-  },
   getMapObject(center = [-122.25, 37.4]) {
     this.updateCoords()
     this.container = document.getElementById('map');
