@@ -11,12 +11,11 @@ app.use(bodyParser.json())
 
 //temporary to create geojson
 app.post('/upload', (req, res) => {
-  let body = req.body
   fs.writeFile('geolocations.json', JSON.stringify(req.body),(err) =>{
     console.log(err)
+    return res.status(500).send(err)
   })
-  return res.status(333).send('hi there')
-
+  return res.status(200).send('success')
 })
 app.get('/geo', (req, res) => {
   fs.readFile('locations.json', (error, data) =>{
@@ -25,7 +24,6 @@ app.get('/geo', (req, res) => {
     }
     return res.status(200).send(data)
   })
-
 })
 
 const server = new apollo.ApolloServer({

@@ -1,0 +1,1947 @@
+{
+	"type": "FeatureCollection",
+	"metadata": {
+		"generated": 1552427299013,
+		"url": "localhost",
+		"title": "Film Locations in San Francisco",
+		"status": 200,
+		"api": "1.0.0",
+		"count": 214
+	},
+	"features": [{
+		"type": "Feature",
+		"properties": {
+			"place": "399 Embarcadero, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.402118, 37.804068, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Nob Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.415249, 37.793262, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Justin Herman Plaza, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.394901, 37.794857, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Randall Museum, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.437885, 37.76438, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "555 Market St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.399926, 37.790003, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "609 Vallejo, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.439974, 37.794613, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "145 Jefferson Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.414879, 37.808186, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Golden Gate Park, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.482184, 37.769368, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Embarcadero Freeway, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.39718, 37.742693, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "950 Mason Street  Nob Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.41003, 37.792369, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "North Beach, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.409002, 37.801175, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "75 California Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.456976, 37.785971, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1100 California Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.456976, 37.785971, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "3rd Street  China Basin, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.391839, 37.77633, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Golden Gate Bridge, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.479795, 37.830285, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Embarcadero Freeway, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.39718, 37.742693, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Potrero Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.399137, 37.756583, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Chinatown, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.406376, 37.794301, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Van Ness Avenue, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.420161, 37.779941, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Fisherman's Wharf, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.416599, 37.809167, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "California @ Montgomery, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.459616, 37.8, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Montgomery/Green, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.401327, 37.787475, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1090 Point Lobos Avenue, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.51408, 37.778558, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "San Francisco Bay, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.419236, 37.779281, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "950 Mason Street  Nob Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.41003, 37.792369, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "445 Geary Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.410606, 37.786832, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "3355 Geary Blvd., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.454906, 37.781163, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "399 San Fernando Way, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.469525, 37.730571, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Palace of Fine Arts, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.448403, 37.802919, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Treasure Island, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.370153, 37.823354, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "33 Spruce St, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.453633, 37.783954, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "373 Broadway, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.402931, 37.798189, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2534 Mission, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.418929, 37.757112, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Bernal Heights Park, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.413471, 37.74344, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "679 Madrid St, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.43282, 37.721625, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "3117 16th St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.401722, 37.76614, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "582 Market St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.401601, 37.789485, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Laguna Honda Hospital; 375 Laguna Honda Blvd., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.459117, 37.747977, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "\"Treasure Island  Building "
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.370153, 37.823354, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "950 Mason Street  Nob Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.41003, 37.792369, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2237 Mason, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.413587, 37.804265, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "242 Columbus Avenue, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.405961, 37.797545, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "The Embarcadero, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.388062, 37.788208, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Telegraph Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.405851, 37.80273, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Nobles Alley, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.40714, 37.801013, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "850 Bryant Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.404277, 37.775138, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2930 Vallejo Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.401258, 37.799535, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "755 Vallejo Street"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.439974, 37.794613, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Chinatown, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.406376, 37.794301, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Chinatown, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.406376, 37.794301, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2104 Broadway, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.421621, 37.795932, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "601 Steiner St, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.436234, 37.792342, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "\"Olympic Flame Café  555 Geary St\", San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.412396, 37.786724, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Justin Herman Plaza, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.394901, 37.794857, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Golden Gate Bridge, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.479795, 37.830285, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Treasure Island, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.370153, 37.823354, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1100 California Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.456976, 37.785971, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Caffe Trieste, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.407352, 37.798631, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Palace of Fine Arts, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.448403, 37.802919, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1101 Filbert St. , San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.44561, 37.796767, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "242 Columbus Avenue  North Beach, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.411791, 37.801453, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Twin Peaks Blvd., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.446822, 37.760507, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2898 Broadway, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.421621, 37.795932, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Marina Green, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.439117, 37.806603, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "330 Santa Clara Ave., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.466181, 37.734027, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "200 Post St. , San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.404374, 37.788814, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2179 48th Ave, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.507205, 37.745588, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "3563 20th St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.420377, 37.758309, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2934 24th St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.410642, 37.752952, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1138 Alabama St, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.410338, 37.743749, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "South Park, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.393975, 37.78159, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2915 16th St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.401722, 37.76614, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "790 Ulloa , San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.464735, 37.740808, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2178 Palou Ave., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.391108, 37.734091, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1122 Folsom Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.408709, 37.776393, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Golden Gate Bridge, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.479795, 37.830285, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Fisherman's Wharf, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.416599, 37.809167, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Ferry Building, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.39343, 37.795535, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Lombard Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.418809, 37.802076, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Chinatown, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.406376, 37.794301, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Jefferson Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.412989, 37.808578, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "628 Cole Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.448977, 37.760855, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1700 Taylor Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.4118, 37.788259, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "3050 24th Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.406513, 37.752969, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "3033 24th Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.412424, 37.752674, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2937 24th Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.406513, 37.752969, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1167 Alabama Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.410338, 37.743749, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1641 York Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.407849, 37.748257, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Bernal Heights Boulevard, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.41049, 37.741611, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "40 Prentiss Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.412062, 37.740227, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "500 Cortland Avenue, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.416153, 37.73887, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Lucky Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.413384, 37.750943, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1125 Guerrero Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.422868, 37.753197, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2007 Franklin Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.424985, 37.793276, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "951 Hudson Avenue, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.38953, 37.740758, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Russian Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.414971, 37.797707, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1627 Haight Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.445816, 37.77016, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1001 Potrero Avenue  Potrero Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.405253, 37.75681, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Visitacion  Valley, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.409713, 37.712132, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "999 California Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.410408, 37.791624, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Marina District, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.437471, 37.802984, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Visitacion  Valley, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.409713, 37.712132, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Russian Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.414971, 37.797707, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Russian Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.414971, 37.797707, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Bernal Heights, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.414214, 37.741001, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Russian Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.414971, 37.797707, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "504 Broadway, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.405699, 37.798115, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "North Beach, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.409002, 37.801175, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Mission, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.391171, 37.770774, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2040 Union Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.430478, 37.797735, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1000 Mason Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.448503, 37.804981, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Pacific Heights, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.435644, 37.792717, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Potrero Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.399137, 37.756583, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Golden Gate Park, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.482184, 37.769368, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1400 18th Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.392959, 37.762792, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "405 Valencia Street  Mission District, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.422138, 37.76746, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "3639 Taraval St, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.505336, 37.741618, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1458 33rd Ave., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.492274, 37.764746, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1601 Lane St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.393259, 37.728234, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "420 Mason St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.409837, 37.787558, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "119 Utah, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.406415, 37.767797, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "100 Alemany Blvd., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.425893, 37.731204, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Mission District, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.419138, 37.75993, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "60 Leavenworth St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.41399, 37.782406, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "66 Potomac, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.432451, 37.770313, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Washington Square Park, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.410098, 37.800876, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1055 Montgomery St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.403297, 37.795379, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "60 Leavenworth St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.41399, 37.782406, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Jefferson Square Park, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.425674, 37.781804, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "940 Powell St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.408417, 37.788295, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "253 4th Ave., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.460978, 37.764301, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Mason and Pacific, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.411554, 37.796221, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Westin St. Francis, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.408974, 37.787749, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "\"Sutter Stockton Garage  444 Stockton\", San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.406532, 37.790003, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "60 Leavenworth St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.41399, 37.782406, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Laguna Honda Hospital, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.459117, 37.747977, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "350 Santa Ana Ave., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.468126, 37.736767, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "60 Potomac, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.432427, 37.770174, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1018 Tennessee St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.389608, 37.761711, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Palace of Fine Arts, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.448403, 37.802919, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "200 Kansas St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.404189, 37.766776, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Washington Square Park, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.410098, 37.800876, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "60 Leavenworth St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.41399, 37.782406, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Treasure Island, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.370153, 37.823354, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2 Rowland, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.404598, 37.797658, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "60 Potomac, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.432427, 37.770174, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "157 Commonwealth, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.455542, 37.781369, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1461 Page St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.443849, 37.771367, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1958 Valencia St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.421194, 37.757701, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Huntington Park, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.412168, 37.792169, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Fairmont Hotel, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.41003, 37.792369, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1000 Mason St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.448503, 37.804981, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "St. Mary's Square Park, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.405144, 37.79193, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Terry A. Francois Blvd. , San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.387606, 37.764483, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2 Rowland, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.404598, 37.797658, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "60 Leavenworth St., San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.41399, 37.782406, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "San Francisco General Hospital, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.405253, 37.75681, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1 Urbano, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.466708, 37.723387, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "3301 Lyon Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.448403, 37.802919, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "950 Mason Street  Nob Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.41003, 37.792369, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Potrero Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.399137, 37.756583, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "100 Larkin Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.415744, 37.779095, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "3321 16th Street  Mission District, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.409533, 37.765676, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "56 Gold Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.402926, 37.796846, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "The Castro, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.434957, 37.760856, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Treasure Island, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.370153, 37.823354, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Alta Plaza Park, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.437695, 37.791215, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Marina District, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.437471, 37.802984, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Palace of Fine Arts, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.448403, 37.802919, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1400 Fell Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.452351, 37.772173, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Union Square, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.407503, 37.787941, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "335 Powell Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.408974, 37.787749, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Financial District, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.398938, 37.793647, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Golden Gate Bridge, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.479795, 37.830285, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1360 Montgomery Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.403297, 37.795379, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2930 3rd Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.390105, 37.736254, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Alioto Park, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.41824, 37.758912, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Chinatown, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.406376, 37.794301, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "\"Marina Green  Marina District\", San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.439117, 37.806603, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "The Embarcadero, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.388062, 37.788208, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Chinatown, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.406376, 37.794301, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Mission District, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.419138, 37.75993, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "850 Bryant Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.404277, 37.775138, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "555 California Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.403745, 37.792103, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Webster Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.429967, 37.778745, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Telegraph Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.405851, 37.80273, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Ferry Building, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.39343, 37.795535, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2107 Union Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.430478, 37.797735, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2100 Green Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.411448, 37.799211, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "647 Valencia Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.4215, 37.762516, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Pier 39, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.410269, 37.809791, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "3301 Lyon Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.448403, 37.802919, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1652 Stockton, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.408976, 37.799327, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "701 Mission Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.418865, 37.772492, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "429 Castro Street  The Castro, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.43475, 37.761992, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Potrero Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.399137, 37.756583, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "North Beach, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.409002, 37.801175, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1138 Filbert Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.44561, 37.796767, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Treasure Island, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.370153, 37.823354, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "\"Andronico's  1200 Irving Street\", San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.471167, 37.764089, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "343 Union Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.430478, 37.797735, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Pier 39 San Francisco, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.410269, 37.809791, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1227 Montgomery Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.403297, 37.795379, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "San Francisco City Hall, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.41926, 37.779293, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "\"Laguna Honda Hospital  375 Laguna Honda Blvd.\", San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.459117, 37.747977, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "225 California Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.456976, 37.785971, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "600 32nd Avenue , San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.491789, 37.778143, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1 California Street  Financial District, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.397169, 37.79318, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Fisherman's Wharf, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.416599, 37.809167, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2 Montgomery Street  Financial District, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.402221, 37.790043, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "100 St. Germain Avenue, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.450289, 37.757458, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "1100 California Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.456976, 37.785971, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "950 Mason Street  Nob Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.41003, 37.792369, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "2230 Sacramento Street, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.404016, 37.793655, 0]
+		}
+	}, {
+		"type": "Feature",
+		"properties": {
+			"place": "Nob Hill, San Francisco"
+		},
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-122.415249, 37.793262, 0]
+		}
+	}]
+}

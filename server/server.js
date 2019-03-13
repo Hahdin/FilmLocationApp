@@ -19,6 +19,9 @@ const readFile = (path, file) => {
       return reject(err)
     }
     let lines = data.replace(/\r/g, '').split('\n')
+    /**
+     * This little dance is to resolve the issue of commas embedded in double quoted strings within a CSV file format
+     */
     let patt = new RegExp('("[^"]+[^,]")')//test strings in full quotes, remove the commas
     lines.forEach(line => {
       //replace commas inside full quotes with spaces
@@ -78,15 +81,6 @@ const getFilm = async (title) =>{
   })
   return _film
 }
-
-const writeFile = (file) =>{
-  return new Promise((resolve, reject) =>{
-
-
-    resolve(true)
-  })
-}
-
 module.exports = {
   getFilms,
   getFilm,
