@@ -3,10 +3,9 @@ import { Map, View } from 'ol';
 import TileLayer from 'ol/layer/Tile';
 import GeoJSON from 'ol/format/GeoJSON.js';
 import { OSM, Vector as VectorSource } from 'ol/source.js';
-import { ATTRIBUTION } from 'ol/source/OSM.js';
-import { Vector as VectorLayer, Heatmap as HeatmapLayer } from 'ol/layer.js';
+import { Vector as VectorLayer} from 'ol/layer.js';
 import { transform } from 'ol/proj.js';
-import { Circle as CircleStyle, Fill, Stroke, Style, Text, Icon } from 'ol/style.js';
+import { Fill, Stroke, Style, Text, Icon } from 'ol/style.js';
 import { getGeoJsonFile } from '../../components/getGeo'
 export const map = {
   rawData: null,
@@ -15,7 +14,6 @@ export const map = {
   myMap: null,
   mousePos: null,
   styleCache: {},
-
   async create({ ...args }) {
     try {
       this.rawData = null
@@ -28,7 +26,6 @@ export const map = {
     }
     catch (e) { Promise.reject(e) }
   },
-
   updateCoords() {
     //transform from lat/lon to UTM
     if (!this.rawData) {
@@ -53,14 +50,12 @@ export const map = {
       console.log(reason)
     })
   },
-
   getMapObject(center = [-122.25, 37.4]) {
     this.updateCoords()
     this.container = document.getElementById('map');
     this.myLayer = new TileLayer({
       source: new OSM({
         url: 'https://maps-cdn.salesboard.biz/styles/klokantech-3d-gl-style/{z}/{x}/{y}.png',
-
       })
     })
     let layers = [
@@ -96,7 +91,6 @@ export const map = {
     return new VectorSource(f)
   },
   styleFeature(feature) {
-    console.log('$$', feature)
     let place = parseFloat(feature.get("place"))
     let style = this.styleCache[place]
     if (!style) {
@@ -134,39 +128,4 @@ export const map = {
   _transform(coord) {
     return transform(coord, 'EPSG:4326', 'EPSG:3857')
   },
-  removeLayer(type) {
-    let removed = false
-    if (this.myMap) {
-      this.myMap.getLayers().forEach(layer => {
-        if (!layer) return false
-        if (type.search(/VECTOR/i) >= 0) {
-          if (layer.type.search(/VECTOR/i) >= 0) {
-            this.myMap.removeLayer(layer)
-            removed = true
-          }
-        }
-        if (type.search(/tile/i) >= 0) {
-          if (layer.type.search(/tile/i) >= 0) {
-            this.myMap.removeLayer(layer)
-            removed = true
-          }
-        }
-      })
-    }
-    return removed
-  },
-  addLayer(type) {
-    let layer = null
-    if (type.search(/VECTOR/i) >= 0) {
-      layer = this.getVectorLayer()
-    }
-    if (layer)
-      this.myMap.addLayer(layer)
-  },
-  switchLayer(type) {
-    if (this.removeLayer(type)) {
-      this.addLayer(type)
-    }
-  },
-
 }

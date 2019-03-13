@@ -2,17 +2,9 @@ export const getGeoJSON = (data) => {
   let films = [...data.data.getAllFilms]
   return new Promise((resolve, reject) => {
     let prs = []
-    let done = []
-    let total = 0
-    let dups = 0
     films.forEach((film, i) => {
-      if (i > 50) return //for testing
       total++
       if (film.Locations && film.Locations.length) {
-        if (done.includes(film.Locations)) {
-          dups++
-          return
-        }
         prs.push(getLonLat(film.Locations))
       }
     })

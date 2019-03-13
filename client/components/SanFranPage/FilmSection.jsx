@@ -6,7 +6,7 @@ import {
   ListGroupItem,
 } from "react-bootstrap";
 const FilmSection = ({ ...props }) => {
-  let { section, heading, myMap, onClickItem, geo, filmInfo } = props
+  let { section, heading,  onClickItem } = props
   let added = []
   return (
     <div >
@@ -60,7 +60,6 @@ const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = (dispatch, ownProps) => ({
   onClickItem: (e) => {
     let values = Object.values(e.target.attributes)
-    console.log('clicked', values[0].ownerElement.innerHTML, values[0].nodeValue)
     //we need to find out if this Movie Title has a coresponding coordinate in the geo
     let newGeo = {
       type: "FeatureCollection",

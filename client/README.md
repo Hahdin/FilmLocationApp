@@ -5,6 +5,7 @@
 
 To start the client, navigate to the client folder and run:
 ```
+npm i
 npm start
 ```
 Once running, visit http://localhost:23456 in your browser

@@ -3,9 +3,10 @@
 This api server uses the downloaded csv file from [Film Locations in San Francisco](https://data.sfgov.org/Culture-and-Recreation/Film-Locations-in-San-Francisco/yitu-d5am)
 
 ## Start the server
-From the server folder, run the command:
+From the server folder, run the commands:
 
 ``` 
+npm i
 node index.js 
 ```
 This will run the server locally on port 65432

@@ -84,5 +84,4 @@ const getFilm = async (title) =>{
 module.exports = {
   getFilms,
   getFilm,
-  writeFile,
 }

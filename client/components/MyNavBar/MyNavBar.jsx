@@ -2,10 +2,7 @@ import React from "react";
 import { connect } from 'react-redux';
 import {
   Navbar,
-  Nav,
-  NavItem,
 } from "react-bootstrap";
-import { LinkContainer } from "react-router-bootstrap";
 const MyNavBar = ({ ...props }) => {
   return (
     <Navbar inverse fluid collapseOnSelect style={{boxShadow: '2px 2px 10px black'}}>
@@ -16,11 +13,6 @@ const MyNavBar = ({ ...props }) => {
         <Navbar.Toggle />
       </Navbar.Header>
       <Navbar.Collapse>
-        {/* <Nav>
-          <LinkContainer to="/map">
-            <NavItem eventKey={1} > Map </NavItem>
-          </LinkContainer>
-        </Nav> */}
         <Navbar.Text pullLeft style={{ fontSize: '12px', marginRight: '10px' }}>
         </Navbar.Text>
       </Navbar.Collapse>

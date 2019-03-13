@@ -4,7 +4,6 @@ const initialState = {
 export const filmReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'GET_FILMS': {
-      console.log('in reducer')
 
       return {
         ...state,

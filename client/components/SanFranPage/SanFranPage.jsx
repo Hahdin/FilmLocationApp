@@ -10,9 +10,9 @@ import { map as _map } from '../../objects/SanFranMap'
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import { getFilms, loadFilms } from '../../actions'
-import { apolloGet, sendToFile } from '../apicalls'
-import { getGeoJSON, createGeoJSONfile, getGeoJsonFile } from '../getGeo'
+import { loadFilms } from '../../actions'
+import { apolloGet } from '../apicalls'
+import { getGeoJsonFile } from '../getGeo'
 import { FilmSection } from './FilmSection'
 
 const SanFranPage = ({ ...props }) => {
@@ -74,7 +74,6 @@ const SanFranPage = ({ ...props }) => {
     }
     catch (e) { Promise.reject(e) }
   }
-  console.log(props.films)
   if (props.films.length === 0) {
     return (<div></div>)
   }
@@ -128,7 +127,6 @@ const getFilmsFromServer = async (query) => {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  console.log('in state')
   return ({
     films: state.filmReducer.films
   })
