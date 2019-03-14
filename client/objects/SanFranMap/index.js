@@ -63,6 +63,7 @@ export const map = {
         zoom: 15
       })
     })
+    
     return this.myMap
   },
   getVectorLayer() {

@@ -97,7 +97,7 @@ export const createGeoJSONfile = (data) => {
   return newGJObject
 }
 //get geojson
-export const getGeoJsonFile = async () => {
+export const getGeoJsonFile = () => {
   return new Promise((resolve, reject) => {
     window.fetch(`${GEO_PATH}`)
       .then(pr => {

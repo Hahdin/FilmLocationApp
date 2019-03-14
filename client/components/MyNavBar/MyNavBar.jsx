@@ -8,7 +8,7 @@ const MyNavBar = ({ ...props }) => {
     <Navbar inverse fluid collapseOnSelect style={{boxShadow: '2px 2px 10px black'}}>
       <Navbar.Header>
         <Navbar.Brand>
-          <a href="/">Film Locations in S.F.</a>
+          <a href="/">Film Locations in San Francisco</a>
         </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>
