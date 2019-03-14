@@ -53,7 +53,6 @@ const mapStateToProps = (state, ownProps) => {
     myMap: ownProps.myMap,
     geo: ownProps.geo,
     setFilmInfo: ownProps.setFilmInfo,
-    //filmInfo: ownProps.filmInfo
   })
 }
 
