@@ -3,6 +3,7 @@ import {
   Grid,
   Col,
   Row,
+  TabContainer,
   Tabs,
   Tab,
 } from "react-bootstrap";
@@ -51,7 +52,6 @@ const SanFranPage = ({ ...props }) => {
         a_SetMap(result).catch(reason => {
           console.log(reason)
         })
-        console.log(result)
       }).catch(reason => {
         console.log(reason)
       })
@@ -95,22 +95,23 @@ const SanFranPage = ({ ...props }) => {
       <Row className="show-grid">
         <Col xs={4} md={4}>
           <div style={{ backgroundColor: 'white' }}>
-            <Tabs defaultActiveKey={1}>
-              <Tab eventKey={1} title={'Films'}>
-                <FilmSection
-                  section={props.films}
-                  heading={'Films'}
-                  myMap={thisMap}
-                  geo={geoJson}
-                  setFilmInfo={setFilmInfo}
-                />
-              </Tab>
-            </Tabs>
+            <TabContainer id='tab1'>
+              <Tabs defaultActiveKey={1}>
+                <Tab eventKey={1} title={'Films'} >
+                  <FilmSection
+                    section={props.films}
+                    heading={'Films'}
+                    myMap={thisMap}
+                    geo={geoJson}
+                    setFilmInfo={setFilmInfo}
+                  />
+                </Tab>
+              </Tabs>
+            </TabContainer>
           </div>
         </Col>
         <Col xs={8} md={8} style={{ position: 'sticky', top: '100px' }}>
           <div style={{ position: 'relative', top: '-30px', width: '50vw', height: '40vh'}} id="map"></div>
-          {/* <div id="map"></div> */}
           <div style={style}>
             <p>{(filmInfo.Title) && `Title: ${filmInfo.Title}`}</p>
             <p>{(filmInfo.ReleaseYear) && `Released: ${filmInfo.ReleaseYear}`}</p>

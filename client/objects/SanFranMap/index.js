@@ -48,7 +48,7 @@ export const map = {
     this.container = document.getElementById('map');
     this.myLayer = new TileLayer({
       source: new OSM({
-        url: 'https://maps-cdn.salesboard.biz/styles/klokantech-3d-gl-style/{z}/{x}/{y}.png',
+        url: 'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png',
       })
     })
     let layers = [

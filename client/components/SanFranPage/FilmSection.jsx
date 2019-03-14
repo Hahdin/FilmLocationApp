@@ -13,7 +13,7 @@ const FilmSection = ({ ...props }) => {
     <div >
       <ListGroup>
         {
-          Object.values(section).map(value => {
+          Object.values(section).map((value, i) => {
             let skip = false
             let title = value.Title
             let date = value.ReleaseYear
@@ -26,10 +26,10 @@ const FilmSection = ({ ...props }) => {
               skip = false
             }
             return (
-              <div style={{ fontSize: '12px' }}>
+              <div id={`${i}-d`} style={{ fontSize: '12px' }} key={`${i}-dk`}>
                 {
                   (!skip) ?
-                    <ListGroupItem onClick={(e) => onClickItem(e)} val={value.Locations} section={heading}>
+                    <ListGroupItem onClick={(e) => onClickItem(e)} val={value.Locations} section={heading} key={`${i}-lg`}>
                       {`${title}: year (${date}), starring ${star}`}
                     </ListGroupItem>
                     : null
