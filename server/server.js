@@ -11,10 +11,10 @@ const readFile = (path, file) => {
     let final = []
     let fullpath = `${path}/${file}`
     let data = null
-    try{
+    try {
       data = fs.readFileSync(fullpath, 'utf8')
     }
-    catch(err){
+    catch (err) {
       console.log('err', err)
       return reject(err)
     }
@@ -43,11 +43,11 @@ const readFile = (path, file) => {
         }
       }
       //Now we can split on commas
-      let la = line.split(',').map(item =>  item)
+      let la = line.split(',').map(item => item)
       if (la !== undefined)
         final.push(la)
     })
-    resolve({ data: final, name: file})
+    resolve({ data: final, name: file })
   })
 }
 /**
@@ -55,31 +55,41 @@ const readFile = (path, file) => {
  * 
  * @param {string} file CSV file name
  */
-const getFilms = async (file) =>{
+const getFilms = async (file) => {
   let path = _path.resolve(__dirname, 'datasource')
-  let films = await readFile(path, `${file}.csv`).catch(reason =>{
-    console.log('get films error', reason)
-    return reason
-  })
-  return films
+  try {
+    let films = await readFile(path, `${file}.csv`).catch(reason => {
+      console.log('get films error', reason)
+      return reason
+    })
+    return films
+  } catch (error) {
+    throw Error(error)
+  }
+
 }
 /**
  * 
  * @param {string} title Fetch a movie by its title
  */
-const getFilm = async (title) =>{
-  let films = await getFilms('Film_Locations_in_San_Francisco').catch(reason =>{
-    console.log(`get film ${title}: error - ${reason}`)
-    return reason
-  })
-  let _film = {}
-  films.data.forEach((film, i) =>{
-    let t = title.toLowerCase()
-    if(film[0].toLowerCase() === t){
-      _film = [...film]
-    }
-  })
-  return _film
+const getFilm = async (title) => {
+  try {
+    let films = await getFilms('Film_Locations_in_San_Francisco').catch(reason => {
+      console.log(`get film ${title}: error - ${reason}`)
+      return reason
+    })
+    let _film = {}
+    films.data.forEach((film, i) => {
+      let t = title.toLowerCase()
+      if (film[0].toLowerCase() === t) {
+        _film = [...film]
+      }
+    })
+    return _film
+  } catch (error) {
+    throw Error(error)
+  }
+
 }
 module.exports = {
   getFilms,

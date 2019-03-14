@@ -1,4 +1,4 @@
-const {  
+const {
   getFilms,
   getFilm,
 } = require('./server')
@@ -7,7 +7,7 @@ const {
  * 
  * @param {array} ar 
  */
-const getFilmFromArray = (ar) =>{
+const getFilmFromArray = (ar) => {
   let i = 0
   return {
     Title: ar[i++],
@@ -26,69 +26,92 @@ const getFilmFromArray = (ar) =>{
 module.exports = {
   Query: {
     film: async (root, args) => {
-      if (args.Title){
-        let f = await getFilm(args.Title)
-        let film = getFilmFromArray(f)
-        return {
-          ...film
+      try {
+        if (args.Title) {
+          let f = await getFilm(args.Title)
+          let film = getFilmFromArray(f)
+          return {
+            ...film
+          }
         }
+        return {
+          Title: "Not Found!"
+        }
+      } catch (error) {
+        throw Error(error)
       }
-      return {
-        Title: "Not Found!"
-      }
+
     },
     getAllFilms: async (root, args) => {
-      let films = await getFilms('Film_Locations_in_San_Francisco')
-      let a = []
-      films.data.forEach(film =>{
-        a.push(getFilmFromArray(film))
-      })
-      return a
+      try {
+        let films = await getFilms('Film_Locations_in_San_Francisco')
+        let a = []
+        films.data.forEach(film => {
+          a.push(getFilmFromArray(film))
+        })
+        return a
+      } catch (error) {
+        throw Error(error)
+      }
+
     },
-    location: async(root, args) =>{
-      if (!args.Location){
+    location: async (root, args) => {
+      if (!args.Location) {
         return {
           Location: "Not Found!"
         }
       }
-      let films = await getFilms('Film_Locations_in_San_Francisco')
-      let returns = []
+      try {
+        let films = await getFilms('Film_Locations_in_San_Francisco')
+        let returns = []
 
-      films.data.forEach(film =>{
-        if (film[2] && film[2].toLowerCase() === args.Location.toLowerCase()){
-          returns.push(getFilmFromArray(film))
+        films.data.forEach(film => {
+          if (film[2] && film[2].toLowerCase() === args.Location.toLowerCase()) {
+            returns.push(getFilmFromArray(film))
+          }
+        })
+        return {
+          Location: args.Location,
+          Movies: returns
         }
-      })
-      return {
-        Location: args.Location,
-        Movies: returns
-      }
-    },
-    funfacts: async (root, args) =>{
-      let films = await getFilms('Film_Locations_in_San_Francisco')
-      let onesWithFacts = []
-      films.data.forEach(film =>{
-        if (film[3]){
-          onesWithFacts.push(getFilmFromArray(film))
-        }
-      })
-      return {
-        Movies: onesWithFacts
-      }
-    },
-    getLocations: async (root, args) =>{
-      let films = await getFilms('Film_Locations_in_San_Francisco')
-      let locations = []
-      films.data.forEach(film =>{
-        if (!locations.includes(film[2])){
-          locations.push(film[2])
-        }
-      })
-      console.log(locations)
-      return {
-        AllLocations: locations
+      } catch (error) {
+        throw Error(error)
       }
 
+    },
+    funfacts: async (root, args) => {
+      try {
+        let films = await getFilms('Film_Locations_in_San_Francisco')
+        let onesWithFacts = []
+        films.data.forEach(film => {
+          if (film[3]) {
+            onesWithFacts.push(getFilmFromArray(film))
+          }
+        })
+        return {
+          Movies: onesWithFacts
+        }
+      } catch (error) {
+        throw Error(error)
+      }
+
+    },
+    getLocations: async (root, args) => {
+      try {
+        let films = await getFilms('Film_Locations_in_San_Francisco')
+        let locations = []
+        films.data.forEach(film => {
+          if (!locations.includes(film[2])) {
+            locations.push(film[2])
+          }
+        })
+        console.log(locations)
+        return {
+          AllLocations: locations
+        }
+      } catch (error) {
+        throw Error(error)
+      }
     },
   },
 };

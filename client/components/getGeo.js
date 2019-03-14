@@ -1,4 +1,4 @@
-import {GEO_PATH} from './constants'
+import { GEO_PATH } from './constants'
 
 export const getGeoJSON = (data) => {
   let films = [...data.data.getAllFilms]
@@ -33,20 +33,25 @@ const getLonLat = async (address) => {
   }
   address = address.replace('"', '')
   address += ', San Francisco'
-  let result = await window.fetch(`http://open.mapquestapi.com/geocoding/v1/address?key=KEYG&location=${address}`)
-    .catch(reason => {
-      console.log(reason)
+  try {
+    let result = await window.fetch(`http://open.mapquestapi.com/geocoding/v1/address?key=KEYG&location=${address}`)
+      .catch(reason => {
+        console.log(reason)
+        return reason
+      })
+    let jsResult = await result.json().catch(reason => {
+      console.log('json', reason)
       return reason
     })
-  let jsResult = await result.json().catch(reason => {
-    console.log('json', reason)
-    return reason
-  })
-  if (jsResult.errors) {
-    console.log('errors getting', jsResult.errors)
-    return jsResult.errors
+    if (jsResult.errors) {
+      console.log('errors getting', jsResult.errors)
+      return jsResult.errors
+    }
+    return jsResult
+  } catch (error) {
+    throw Error(error)
   }
-  return jsResult
+
 }
 
 /**
