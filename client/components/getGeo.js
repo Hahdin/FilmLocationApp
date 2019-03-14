@@ -18,6 +18,13 @@ export const getGeoJSON = (data) => {
     })
   })
 }
+
+/**
+ * This method was used to aquire lon/lat coordinates from the avaiable addresses.
+ * It is not currently used in the app.
+ * 
+ * @param {string} address 
+ */
 const getLonLat = async (address) => {
   let patt = new RegExp('[(](.*)[)]')
   let newAddy = patt.exec(address)
@@ -42,7 +49,13 @@ const getLonLat = async (address) => {
   return jsResult
 }
 
-export const createGeoJSONfile = (data, filmData) => {
+/**
+ * This method was used to create the geoJSON file
+ * It is not currently in use.
+ * 
+ * @param {array} data 
+ */
+export const createGeoJSONfile = (data) => {
   let newGJObject = {
     type: "FeatureCollection",
     metadata: {

@@ -57,7 +57,7 @@ const SanFranPage = ({ ...props }) => {
       })
       //Do this to create geoJSON
       // getGeoJSON(result).then(promise =>{
-      //   let gj = createGeoJSONfile(promise, result)
+      //   let gj = createGeoJSONfile(promise)
       //   sendToFile(gj)
       // }).catch(reason =>{
       //   console.log(reason)
