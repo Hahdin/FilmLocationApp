@@ -1,10 +1,11 @@
+import {API_PATH} from './constants'
 /**
  * Using GraphQL 
  * 
  * @param {string} query the query
  */
 export const apolloGet = async (query) =>{
-  let result = await window.fetch(`http://localhost:65432/graphql`, {
+  let result = await window.fetch(`${API_PATH}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -29,7 +30,7 @@ export const apolloGet = async (query) =>{
 //this is a temporary function, uses to initially create the geoJSON.json file
 export const sendToFile = async (ob) =>{
   let pay = JSON.stringify(ob)
-  let result = await window.fetch(`http://localhost:65432/upload`, {
+  let result = await window.fetch(`${API_PATH}`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

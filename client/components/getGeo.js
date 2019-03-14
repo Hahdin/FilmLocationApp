@@ -1,3 +1,5 @@
+import {GEO_PATH} from './constants'
+
 export const getGeoJSON = (data) => {
   let films = [...data.data.getAllFilms]
   return new Promise((resolve, reject) => {
@@ -84,7 +86,7 @@ export const createGeoJSONfile = (data, filmData) => {
 //get geojson
 export const getGeoJsonFile = async () => {
   return new Promise((resolve, reject) => {
-    window.fetch(`http://localhost:65432/geo`)
+    window.fetch(`${GEO_PATH}`)
       .then(pr => {
         pr.json()
           .then(js => {
