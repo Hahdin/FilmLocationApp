@@ -4,7 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "start": "webpack -p && babel-node --presets @babel/preset-env server.js"
+    "start": "webpack -p && babel-node --presets @babel/preset-env server.js",
+    "dev": "webpack && babel-node --presets @babel/preset-env server.js"
   },
   "keywords": [],
   "author": "",

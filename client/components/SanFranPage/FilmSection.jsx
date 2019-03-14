@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+
 import { connect } from 'react-redux'
 import {
   ListGroup,
   ListGroupItem,
 } from "react-bootstrap";
 const FilmSection = ({ ...props }) => {
-  let { section, heading,  onClickItem } = props
+  let { section, heading, myMap, onClickItem, geo,  } = props
   let added = []
   return (
     <div >
@@ -42,24 +43,24 @@ const FilmSection = ({ ...props }) => {
   )
 }
 FilmSection.propTypes = {
-  section: PropTypes.object.isRequired,
   onClickItem: PropTypes.func.isRequired,
 }
 
 const mapStateToProps = (state, ownProps) => {
   return ({
-    section: ownProps.section || {},
+    section: ownProps.section || [],
     heading: ownProps.heading,
     myMap: ownProps.myMap,
     geo: ownProps.geo,
     setFilmInfo: ownProps.setFilmInfo,
-    filmInfo: ownProps.filmInfo
+    //filmInfo: ownProps.filmInfo
   })
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => ({
   onClickItem: (e) => {
     let values = Object.values(e.target.attributes)
+    console.log('clicked', values[0].ownerElement.innerHTML, values[0].nodeValue)
     //we need to find out if this Movie Title has a coresponding coordinate in the geo
     let newGeo = {
       type: "FeatureCollection",
@@ -74,6 +75,12 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
       features: []
     }
     let added = false
+    let patt = new RegExp('(.*): year \\((.*)\\), starring (.*)')
+    let parts = patt.exec(values[0].ownerElement.innerHTML)
+    let film = []
+    film = ownProps.section.filter((f) => f.Title == parts[1] && 
+    f.ReleaseYear == parseInt(parts[2]) && 
+    f.Actor1 == parts[3] )
     ownProps.geo.features.forEach(feature => {
       let place = feature.properties.place
       let i = place.indexOf(',')
@@ -81,6 +88,7 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
         place = place.slice(0, i)
       }
       let val = values[0].nodeValue.toLowerCase()
+
       val.trim()
       place.trim()
       place = place.toLowerCase()
@@ -101,11 +109,12 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
       }
     })
     if (added) {
-      ownProps.setFilmInfo(`Found Coordinates Found for Address ${values[0].nodeValue}!!!!`)
+      film[0].found = true
       ownProps.myMap.addFeature(newGeo)
     } else {
-      ownProps.setFilmInfo(`No Coordinates Found for Address ${values[0].nodeValue}`)
+      film[0].found = false
     }
+    ownProps.setFilmInfo(film[0])
   }
 })
 const connected = connect(

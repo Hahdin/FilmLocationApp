@@ -17,7 +17,7 @@ import { FilmSection } from './FilmSection'
 
 const SanFranPage = ({ ...props }) => {
   const [thisMap, setMap] = useState(null)
-  const [filmInfo, setFilmInfo] = useState('')
+  const [filmInfo, setFilmInfo] = useState({})
   const [geoJson, setGeoJson] = useState(null)
   const a_SetMap = async (geo) => {
     try {
@@ -57,7 +57,7 @@ const SanFranPage = ({ ...props }) => {
       })
       //Do this to create geoJSON
       // getGeoJSON(result).then(promise =>{
-      //   let gj = createGeoJSONfile(promise)
+      //   let gj = createGeoJSONfile(promise, result)
       //   sendToFile(gj)
       // }).catch(reason =>{
       //   console.log(reason)
@@ -77,6 +77,19 @@ const SanFranPage = ({ ...props }) => {
   if (props.films.length === 0) {
     return (<div></div>)
   }
+  
+  let style = {
+    position: 'relative', 
+    top: '-30px',
+    width: '50vw', 
+    color:  filmInfo.found ? 'black' : 'white', 
+    background: filmInfo.found ? 'white' : 'black',
+    boxShadow: '2px 2px 2px black',
+    border: filmInfo.found ? 'thick solid black' : 'thick solid white',
+    borderStyle: 'double',
+    padding: '10px',
+}
+
   return (<div>
     <Grid fluid>
       <Row className="show-grid">
@@ -90,15 +103,27 @@ const SanFranPage = ({ ...props }) => {
                   myMap={thisMap}
                   geo={geoJson}
                   setFilmInfo={setFilmInfo}
-                  filmInfo={filmInfo}
                 />
               </Tab>
             </Tabs>
           </div>
         </Col>
         <Col xs={8} md={8} style={{ position: 'sticky', top: '100px' }}>
-          <div style={{ position: 'relative', top: '-30px', color: 'white', background: 'black' }}>{filmInfo}</div>
-          <div className="map" id="map"></div>
+          <div style={{ position: 'relative', top: '-30px', width: '50vw', height: '40vh'}} id="map"></div>
+          {/* <div id="map"></div> */}
+          <div style={style}>
+            <p>{(filmInfo.Title) && `Title: ${filmInfo.Title}`}</p>
+            <p>{(filmInfo.ReleaseYear) && `Released: ${filmInfo.ReleaseYear}`}</p>
+            <p>{(filmInfo.Locations) && `Locations: ${filmInfo.Locations}`}</p>
+            <p>{(filmInfo.FunFacts) && `Fun Facts: ${filmInfo.FunFacts}`}</p>
+            <p>{(filmInfo.ProductionCompany) && `Production Company: ${filmInfo.ProductionCompany}`}</p>
+            <p>{(filmInfo.Distributor) && `Distributor: ${filmInfo.Distributor}`}</p>
+            <p>{(filmInfo.Director) && `Director: ${filmInfo.Director}`}</p>
+            <p>{(filmInfo.Writer) && `Writer: ${filmInfo.Writer}`}</p>
+            <p>{(filmInfo.Actor1) && `Actor 1: ${filmInfo.Actor1}`}</p>
+            <p>{(filmInfo.Actor2) && `Actor 2: ${filmInfo.Actor2}`}</p>
+            <p>{(filmInfo.Actor3) && `Actor 3: ${filmInfo.Actor3}`}</p>
+            </div>
         </Col>
       </Row>
     </Grid>
